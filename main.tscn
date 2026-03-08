@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://wabr7kdlnds0"]
+
+[ext_resource type="Script" uid="uid://cqf3pt5uppo3k" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://8scjdjssuud2" path="res://canvas_layer.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://co10knchbdgm1" path="res://texture.tscn" id="3_h2yge"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.19215687, 0.18039216, 1)
+
+[node name="Main" type="Node" unique_id=1848013756]
+script = ExtResource("1_ig7tw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1990767891]
+script = ExtResource("2_0xm2m")
+
+[node name="Textboxalicious" type="MarginContainer" parent="CanvasLayer" unique_id=2096133504]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -409.0
+offset_top = -12.0
+offset_right = 409.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = -25
+theme_override_constants/margin_top = -40
+theme_override_constants/margin_right = -25
+theme_override_constants/margin_bottom = -40
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Textboxalicious" unique_id=1319509261]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_h2yge")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Textboxalicious/Panel" unique_id=192006827]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Textboxalicious/Panel/MarginContainer" unique_id=725910618]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Textboxalicious/Panel/MarginContainer/Panel" unique_id=403984900]
+layout_mode = 1
+offset_left = 23.0
+offset_top = 15.0
+offset_right = 327.0
+offset_bottom = 47.0
+theme_override_font_sizes/font_size = 23
+text = "welcome to period poverty!"
+
+[node name="texture" parent="." unique_id=1680419210 instance=ExtResource("3_h2yge")]

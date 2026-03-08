@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cqf3pt5uppo3k" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://8scjdjssuud2" path="res://canvas_layer.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://co10knchbdgm1" path="res://texture.tscn" id="3_h2yge"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
 bg_color = Color(0, 0, 0, 1)
@@ -57,3 +58,5 @@ offset_right = 327.0
 offset_bottom = 47.0
 theme_override_font_sizes/font_size = 23
 text = "welcome to period poverty!"
+
+[node name="texture" parent="." unique_id=1680419210 instance=ExtResource("3_h2yge")]

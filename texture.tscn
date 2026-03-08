@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://co10knchbdgm1"]
+
+[ext_resource type="Texture2D" uid="uid://b7dlni8ry47ij" path="res://floor_and_walls.png" id="1_awvpy"]
+[ext_resource type="Texture2D" uid="uid://crseh13a8ggvu" path="res://floor.png" id="2_61eo7"]
+
+[node name="texture" type="Sprite2D" unique_id=1680419210]
+position = Vector2(383.5625, 245.53127)
+scale = Vector2(0.19189063, 0.24553123)
+texture = ExtResource("1_awvpy")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1681184104]
+position = Vector2(-1206.7422, 1606.5929)
+scale = Vector2(0.8080774, 0.6190658)
+texture = ExtResource("2_61eo7")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Sprite2D2" unique_id=753697270]
+position = Vector2(1960.5, 0)
+texture = ExtResource("2_61eo7")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D2/Sprite2D3" unique_id=1724743008]
+position = Vector2(1960.5, 0)
+texture = ExtResource("2_61eo7")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Sprite2D2/Sprite2D3/Sprite2D4" unique_id=1479513629]
+position = Vector2(1960.5, 0)
+texture = ExtResource("2_61eo7")
